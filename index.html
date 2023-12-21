@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>PRIN134 Final Exam</title>
+  <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="container pt-4">
+    <div class="row row-cols-1 row-cols-md-2 mb-4">
+      <div class="col">
+        <h1>PRIN134 Final Exam</h1>
+      </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-2 mb-4">
+      <div class="col">
+        <h3>Create a To Do Item</h3>
+        <form action="">
+          <div class="mb-3">
+            <label for="txtTitle" class="form-label">Title</label>
+            <input type="text" class="form-control" id="txtTitle" placeholder="Enter title">
+          </div>
+          <div class="mb-3">
+            <label for="txtDetails" class="form-label">Details</label>
+            <textarea class="form-control" id="txtDetails" rows="3" placeholder="Enter details..."></textarea>
+          </div>
+          <button type="button" class="btn btn-info" id="btnAdd">Add</button>
+          <button type="reset" class="btn btn-outline-info" id="btnClear">Clear</button>
+        </form>
+      </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-2 mb-4">
+      <div class="col">
+        <h3>Processing</h3>
+        <p>Select a method.</p>
+        <button class="btn btn-outline-info" type="button" id="btnFIFO">First In First Out</button>
+        <button class="btn btn-outline-info" type="button" id="btnFILO">First In Last Out</button>
+        <button class="btn btn-outline-info" type="button" id="btnReset">Reset</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <h3>To Do Items:</h3>
+        <div id="todoContainer" class="row row-cols-1 row-cols-md-3 g-4">
+        </div>
+      </div>
+      <div class="col">
+        <h3>Done Items:</h3>
+        <div id="doneContainer" class="row row-cols-1 row-cols-md-3 g-4">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
